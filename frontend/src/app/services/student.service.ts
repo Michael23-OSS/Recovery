@@ -1,29 +1,29 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Product } from '../models/product';
+import { Student } from '../models/student';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
-  url = 'http://localhost:4000/api/products/';
+export class StudentService {
+  url = 'http://34.173.169.144:4000/api/students/';
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<any> {
+  getStudents(): Observable<any> {
     return this.http.get(this.url);
   }
 
-  removeProduct(id: string): Observable<any> {
+  removeStudent(id: string): Observable<any> {
     return this.http.delete(this.url + id);
   }
 
-  saveProduct(product: Product): Observable<any> {
-    return this.http.post(this.url, product);
+  saveStudent(student: Student): Observable<any> {
+    return this.http.post(this.url, student);
   }
 
-  getProduct(id: string): Observable<any> {
+  getStudent(id: string): Observable<any> {
     return this.http.get(this.url + id);
   }
 }

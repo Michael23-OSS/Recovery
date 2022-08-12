@@ -9,14 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Componentes
 import { AppComponent } from './app.component';
-import { CreateProductComponent } from './components/create-product/create-product.component';
-import { ListProductsComponent } from './components/list-products/list-products.component';
+import { CreateStudentComponent } from './components/create-student/create-student.component';
+import { ListStudentsComponent } from './components/list-students/list-students.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateProductComponent,
-    ListProductsComponent
+    CreateStudentComponent,
+    ListStudentsComponent
   ],
   imports: [
     BrowserModule,
