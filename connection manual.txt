@@ -7,13 +7,11 @@ First, we must open the folder that says recovery-frontend, then we enter these 
 3. npm install
 4. ng serve 
 
-
-BACKEND
-Next, open the folder that says recovery-backend, then enter these commands in the Visual Studio Code console.
-1. npm i
-2. nodemon start
-
-
 MONGODB COMPASS
 Finally, we enter the following URI to visualize the stored data: 
-URI: mongodb+srv://grupo2:grupo2@cluster0.m2psu.mongodb.net/recoverydb?retryWrites=true&w=majority
+URI: mongodb+srv://admin:admin@cluster0.ohmrl.mongodb.net/?retryWrites=true&w=majority'
+
+API REST SERVICES:
+http://34.173.169.144/academy/api/student.php
+
+
